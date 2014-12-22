@@ -1,0 +1,26 @@
+/*
+* LESS Variables are defined with an @ character
+* and can have different kinds of data types:
+* color, string, boolean, multi­value
+*/
+
+
+//Variables
+
+@color1: black; 			// named color value
+@color2: #00f;  			// hex code color value
+@stringVar:" with LESS";  	//string variable
+@fontSize: 24px;  			//numeric value
+@border: 2px solid @color1; //multi-value variable
+@padding: 15px;				//one-value variable
+
+//Mixins
+
+.radius(@radius) {
+ -webkit-border-radius: @radius; //Chrome,Safari4+
+ -moz-border-radius: @radius;	 //FF3.6+ 
+ -o-border-radius: @radius;		 //Opera 11.10+ 
+ -ms-border-radius: @radius;     //IE10+ 
+  border-radius: @radius;
+}
+
